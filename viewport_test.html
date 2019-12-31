@@ -102,8 +102,8 @@ We chose visibility:hidden as opposed to display:none to maintain the space of t
 			var viewportBottom = viewportTop + $(window).height();
 
 			return elementBottom > viewportTop && elementTop < viewportBottom;
-		};
-
+		};		
+/* below we have two differnt listerers bound in one function, resize and scroll*/ 
 		$(window).on('resize scroll', function() {
 			$('.color').each(function() {
 				var activeColor = $(this).attr('id');
